@@ -8,7 +8,8 @@ namespace InterfaceExercise
 {
     public class Car : ICompany, IVehicle
     {
-        public Car(
+        public Car
+            (
             string logo,
             string country,
             int numberOfWheels,
@@ -39,11 +40,14 @@ namespace InterfaceExercise
 
         public void CompanyDetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"This car is from {Logo}, located in {Country}.");
         }
         public void DisplayDetails()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"It has {NumberOfWheels} wheels, it weighs {Weight} lbs, and it's MPG is {MPG}.");
+            Console.WriteLine($"Is it a coupe? {Has2Doors}");
+            Console.WriteLine($"Does it have a trunk? {HasTrunk}");
+            Console.WriteLine($"It costs ${MSRP * 1.25} but for you my friend it's ${MSRP * 1.01}. You should buy it.");
         }
     }
 }
