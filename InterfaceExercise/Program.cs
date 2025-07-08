@@ -44,9 +44,9 @@ namespace InterfaceExercise
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
 
-            SUV suv1 = new SUV("Toyota", "Japan", 4, 4200.00, 95000.99, 25.5, 8, true);
-            Truck truck1 = new Truck("Honda", "Japan", 4, 4420.00, 4900.99, 23.9, true, true);
-            Car car1 = new Car("Porsche", "Germany", 4, 2914.5, 59000.99, 32.1, true, true);
+            SUV suv1 = new SUV("Toyota", "Japan", 4, 4200.00, 95750.99, 25.5, 8, true);
+            Truck truck1 = new Truck("Honda", "Japan", 4, 4420.00, 49030.99, 23.9, true, true);
+            Car car1 = new Car("Porsche", "Germany", 4, 2914.5, 59128.99, 32.1, true, true);
 
             suv1.CompanyDetails();
             suv1.DisplayDetails();
@@ -54,9 +54,6 @@ namespace InterfaceExercise
             truck1.DisplayDetails();
             car1.CompanyDetails();
             car1.DisplayDetails();
-
-
-
         }
     }
 }

@@ -12,7 +12,6 @@ namespace InterfaceExercise
         public double Weight { get; set; }
         public double MSRP { get; set; }
         public double MPG { get; set; }
-
         public void DisplayDetails();
     }
 }

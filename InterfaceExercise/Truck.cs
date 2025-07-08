@@ -33,7 +33,7 @@ namespace InterfaceExercise
         public string Country { get; set; } = "Solomon Islands";
         public int NumberOfWheels { get; set; } = 4;
         public double Weight { get; set; } = 3500;
-        public double MSRP { get; set; } = 45000;
+        public double MSRP { get; set; } = 314159;
         public double MPG { get; set; } = 21.3;
         public void CompanyDetails()
         {
@@ -44,7 +44,7 @@ namespace InterfaceExercise
             Console.WriteLine($"It has {NumberOfWheels} wheels, it weighs {Weight} lbs, and it's MPG is {MPG}.");
             Console.WriteLine($"Does it even have an extended cab? {HasExtendedCab}");
             Console.WriteLine($"What about a bed liner? {HasBedLiner}");
-            Console.WriteLine($"It costs ${MSRP * 1.25} but for you my friend it's ${MSRP * 1.01}. You should buy it.");
+            Console.WriteLine($"It costs ${MSRP * 1.25:F2} but for you my friend it's discounted at ${MSRP * 1.01:F2}. You should buy it.\n");
         }
     }
 }

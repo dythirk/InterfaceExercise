@@ -10,7 +10,6 @@ namespace InterfaceExercise
     {
         public string Logo { get; set; }
         public string Country { get; set; }
-
         public void CompanyDetails();
     }
 }
