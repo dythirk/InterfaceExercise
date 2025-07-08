@@ -27,15 +27,14 @@ namespace InterfaceExercise
             HasExtendedCab = hasExtendedCab;
             HasBedLiner = hasBedLiner;
         }
-        public bool HasExtendedCab { get; set; }
-        public bool HasBedLiner { get; set; }
-        public string Logo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Country { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MSRP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MPG { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        public bool HasExtendedCab { get; set; } = false;
+        public bool HasBedLiner { get; set; } = false;
+        public string Logo { get; set; } = "Oldsmobile";
+        public string Country { get; set; } = "Solomon Islands";
+        public int NumberOfWheels { get; set; } = 4;
+        public double Weight { get; set; } = 3500;
+        public double MSRP { get; set; } = 45000;
+        public double MPG { get; set; } = 21.3;
         public void CompanyDetails()
         {
             Console.WriteLine($"This truck is from {Logo}, located in {Country}.");

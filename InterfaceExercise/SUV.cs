@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
@@ -29,14 +25,14 @@ namespace InterfaceExercise
             NumberOfSeats = numberOfSeats;
             HasAutomaticTrunkClose = hasAutomaticTrunkClose;
         }
-        public int NumberOfSeats { get; set; }
-        public bool HasAutomaticTrunkClose { get; set; }
-        public string Logo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Country { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MSRP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MPG { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int NumberOfSeats { get; set; } = 5;
+        public bool HasAutomaticTrunkClose { get; set; } = false;
+        public string Logo { get; set; } = "Pontiac";
+        public string Country { get; set; } = "Guam";
+        public int NumberOfWheels { get; set; } = 4;
+        public double Weight { get; set; } = 5000;
+        public double MSRP { get; set; } = 81000;
+        public double MPG { get; set; } = 13.5;
 
         public void CompanyDetails()
         {

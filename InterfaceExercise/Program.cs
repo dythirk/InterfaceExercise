@@ -48,6 +48,14 @@ namespace InterfaceExercise
             Truck truck1 = new Truck("Honda", "Japan", 4, 4420.00, 4900.99, 23.9, true, true);
             Car car1 = new Car("Porsche", "Germany", 4, 2914.5, 59000.99, 32.1, true, true);
 
+            suv1.CompanyDetails();
+            suv1.DisplayDetails();
+            truck1.CompanyDetails();
+            truck1.DisplayDetails();
+            car1.CompanyDetails();
+            car1.DisplayDetails();
+
+
 
         }
     }

@@ -29,15 +29,14 @@ namespace InterfaceExercise
             HasTrunk = hasTrunk;
             Has2Doors = has2Doors;
         }
-        public bool HasTrunk { get; set; }
-        public bool Has2Doors { get; set; }
-        public string Logo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Country { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double Weight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MSRP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MPG { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        public bool HasTrunk { get; set; } = true;
+        public bool Has2Doors { get; set; } = false;
+        public string Logo { get; set; } = "Plymouth";
+        public string Country { get; set; } = "Kiribati";
+        public int NumberOfWheels { get; set; } = 4;
+        public double Weight { get; set; } = 2500;
+        public double MSRP { get; set; } = 30000;
+        public double MPG { get; set; } 35.4;
         public void CompanyDetails()
         {
             Console.WriteLine($"This car is from {Logo}, located in {Country}.");
